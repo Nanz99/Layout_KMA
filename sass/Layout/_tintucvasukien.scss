@@ -1,0 +1,48 @@
+.tintucvasukien {
+   padding: 0 0 70px;
+   .tintucvasukien__title {
+      text-align: center;
+      position: relative;
+      padding-bottom: 60px;
+      margin-bottom: 20px;
+      @include title;
+   }
+
+   .tintucvasukien__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 80%;
+      margin: 0 auto;
+      grid-column-gap: 30px;
+
+      .tintucvasukien__item {
+         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+         transition: all 250ms ease-in-out 0s;
+         border-radius: 5px;
+         overflow: hidden;
+         &:hover{
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+         }
+         .tintucvasukien__img {
+            img {
+               display: block;
+               width: 100%;
+            }
+         }
+
+         .tintucvasukien__detail {
+            padding: 10px;
+
+            h3 {
+               font-size: 24px;
+               line-height: 27px;
+               margin: 0 0 14px 0;
+               color: $color-black-4;
+               &:hover{
+                  color:$color-blue-0;
+               }
+            }
+         }
+      }
+   }
+}

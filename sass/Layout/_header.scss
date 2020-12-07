@@ -1,0 +1,25 @@
+header{
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 15px 0;
+   height: 90px;
+   a.logo{
+      background: url(../../img/logo.jpg) no-repeat center;   
+      height: 80px;
+      width: 220px;
+      display: block;
+      transform: scale(1.2);
+   }
+   nav{
+      ul{
+         li{
+            display: inline;
+            margin: 0 10px;
+            a{
+               @include styleText($color-black-2,$fs-1,$fw-bold-1)
+            }
+         }
+      }
+   }
+}

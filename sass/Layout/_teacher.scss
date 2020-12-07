@@ -1,0 +1,56 @@
+.teacher {
+   padding: 70px 0;
+   background-color: $color-grey-0;
+
+   .teacher__title {
+      position: relative;
+      padding-bottom: 60px;
+      margin-bottom: 20px;
+      text-align: center;
+      @include title;
+   }
+
+   .teacher__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 30px;
+      width: 80%;
+      margin: auto;
+
+      .teacher__item {
+         margin-top: 60px;
+         padding-bottom: 0;
+         overflow: visible;
+         border: 1px solid;
+         border-color: #fff;
+         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+         transition: all 350ms ease-in-out 0s;
+         &:hover{
+            .teacher__img {
+               img{
+                  transform: translateY(70px);
+                  filter: grayscale(1);
+                 
+               }
+            }
+         }
+         .teacher__img {
+            img {
+               transition: all 350ms ease-in-out 0s;
+               display: block;
+               max-width: 100%;
+               height: auto;
+               margin-top: -60px;
+            }
+         }
+         .teacher__detail{
+            position: relative;
+            padding: 20px;
+            background-color: $color-white-0;
+            p{
+               line-height: 1.5;
+            }
+         }
+      }
+   }
+}
