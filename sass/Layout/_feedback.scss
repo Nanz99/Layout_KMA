@@ -1,0 +1,99 @@
+.feedback {
+   position: relative;
+   height: 400px;
+   display: flex;
+   align-items: center;
+   background: url(../../img/bg-01.jpg) no-repeat top left /cover;
+
+   &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+   }
+
+   .feedback__content {
+      width: 70%;
+      margin: auto;
+      display: block;
+
+      .feedback__item {
+         margin: 0 20px;
+         outline: none !important;
+         .quote-wrap {
+            color: #fff;
+
+            blockquote {
+               height: 140px;
+               margin-bottom: 0;
+               padding: 50px;
+               background: #252525 none repeat scroll 0 0;
+            }
+
+            .quote-author {
+               img {
+                  border: 6px solid #f1f1f1;
+                  border-radius: 50%;
+                  height: 100px;
+                  width: 100px;
+                  float: left;
+                  margin-right: 20px;
+                  margin-top: -32px;
+                  position: relative;
+               }
+
+               .quote-footer {
+                  h5 {
+                     font-size: 24px;
+                     line-height: 27px;
+                     margin: 0 0 14px 0;
+                     display: inline-block;
+                     margin-right: 10px;
+                     margin-top: 15px;
+
+                     a {
+                        color: $color-white-0;
+                     }
+                  }
+
+                  span {
+                     color: #ddd;
+                  }
+               }
+            }
+         }
+      }
+
+      .slick-arrow {
+         display: none !important;
+      }
+
+      .slick-dots {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         li {
+            height: 11px;
+            width: 11px;
+            background-color: $color-black-0;
+            margin: 0 5px;
+
+            button {
+               display: none;
+            }
+         }
+
+         li.slick-active {
+            height: 14px;
+            width: 14px;
+            background-color: $color-blue-0;
+
+         }
+      }
+   }
+
+
+}

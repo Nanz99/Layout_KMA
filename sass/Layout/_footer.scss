@@ -1,0 +1,96 @@
+footer {
+   position: relative;
+   margin-top: 50px;
+
+   .footer__top {
+      background: url(../../img/sep-cloud.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+      height: 120px;
+      width: 100%;
+
+   }
+
+   .footer__content {
+
+      color: $color-white-0;
+      background: #252525;
+      display: grid;
+      grid-column-gap: 40px;
+      padding: 20px 10% 40px;
+      grid-template-columns: repeat(3, 1fr);
+
+      .footer__item {
+         position: relative;
+
+         a.logo-footer {
+            margin-bottom: 20px;
+            @include styleText($color-blue-0, $fs-2 + 4, $fw-bold);
+            display: block;
+         }
+
+         h2 {
+            font-size: 20px;
+            line-height: 27px;
+            margin: 0 0 20px 0;
+            &:hover{
+               color:$color-blue-0;
+            }
+            
+         }
+
+         ul {
+            li {
+               color: #969696;
+               margin: 10px 0;
+
+               &:hover {
+                  color: $color-blue-0;
+               }
+
+            }
+         }
+
+         p {
+            color: #969696;
+         }
+
+         .form-group {
+            display: inline-block;
+            margin-top: 20px;
+
+            .form-control {
+               width: 300px;
+
+               background: #303030;
+               position: relative;
+               z-index: 2;
+               float: left;
+               color: $color-white-0;
+
+               margin-bottom: 0;
+               font-size: 16px;
+               padding: 6px 42px 6px 12px;
+               border: none;
+               display: inline-block;
+               height: 60px;
+               transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+               box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+            }
+
+            .btn-submit {
+               background-color: $color-blue-0;
+               color: $color-white-0;
+               height: 60px;
+               width: 60px;
+
+               border: none;
+               outline: none;
+
+               &:hover {
+                  background-color: $color-grey-0;
+                  color: $color-black-0;
+               }
+            }
+         }
+      }
+   }
+}
